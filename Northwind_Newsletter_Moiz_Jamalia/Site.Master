@@ -1,0 +1,29 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.Master.cs" Inherits="Northwind_Newsletter_Moiz_Jamalia.Site" %>
+
+<!DOCTYPE html>
+<html>
+<head runat="server">
+    <link href="master-styles.css" rel="stylesheet" />
+</head>
+<body>
+    <form id="form1" runat="server">
+        <header>
+            <div class="title">
+                <span class="GBS-Northwind">GBS Northwind </span>
+            </div>
+        </header>
+        <div class="main-container">
+            <div class="menu">
+                <asp:ContentPlaceHolder ID="navigation" runat="server" />
+            </div>
+            <div class="content-container" style="margin-bottom: 100px;">
+                <asp:ContentPlaceHolder ID="content" runat="server" />
+            </div>
+            <footer>
+                <asp:Label ID="userInfo" runat="server" CssClass="userinfoActive" />
+                <asp:Label ID="LegalNotice" runat="server"> <a href="LegalNotice.aspx">Legal Notice</a> </asp:Label>
+            </footer>
+        </div>
+    </form>
+</body>
+</html>
